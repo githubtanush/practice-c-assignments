@@ -1,0 +1,3 @@
+// The format specifier %i takes integer value as an integer value which means values should be decimal, octal and hexadecimal and octal value is provided by preceding '0' while hexadecimal value is provided by preceding '0x'
+// %g %g represents the decimal format of the answer, depending upon whose length is smaller, comparing between %e and %f. Also removes succeeding zeros. Using these format specifiers you can print your data simply in different formats, depending upon your needs.
+// %lf-is the specifier which is used by double
