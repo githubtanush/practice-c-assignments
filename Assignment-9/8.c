@@ -1,11 +1,16 @@
 #include<stdio.h>
 int main(){
-    int i,s=0,n;
-    printf("Enter the n till what u want till the counting: ");
+    int i=2,n;
+    printf("for which number you check it is prime or not");
     scanf("%d",&n);
-    for(i=1;i<=n;i++){
-        s=s+i;
+    while(i<n){//i<=n means we also check n so that it is prime automatically;
+    //divide hogya not prime
+        if(n%i==0){
+            printf("Not Prime for %d\n",i);
+        }
+        else{
+            printf("Prime for %d\n",i);
+        }
+        i=i+1;
     }
-    printf("%d\n",s);
-    getchar();
 }
