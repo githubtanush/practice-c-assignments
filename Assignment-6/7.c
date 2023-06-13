@@ -1,18 +1,12 @@
 #include<stdio.h>
 int main(){
-    char ch;
-    printf("Enter the thing for which u find it is alphabet digit or special\n");
-    scanf("%c",&ch);
-    if(ch>='A' & ch<='Z'){
-        printf("The thing is alphabet Uppercase\n");
-    }
-    else if (ch>='a' & ch<='z'){
-        printf("The thing is alphabet lowercase\n");
-    }
-    else if(ch>='0' & ch<='9'){
-        printf("The thing is digit\n");
+    int a,b,c;
+    printf("Enter the sides of a triangle");
+    scanf("%d %d %d",&a,&b,&c);
+    if(a+b>c && b+c>a && c+a>b){
+        printf("triangle is valid\n");
     }
     else{
-        printf("The thing is special character\n");
+        printf("Triangle is not valild\n");
     }
 }

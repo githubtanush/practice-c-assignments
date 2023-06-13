@@ -1,15 +1,18 @@
 #include<stdio.h>
 int main(){
-    int a,b,c;
-    printf("Enter the no. which u find that it is greater or not\n");
-    scanf("%d %d %d",&a,&b,&c);
-    if(a>=b & a>=c){
-        printf("%d\n",a);
+    char ch;
+    printf("Enter the thing for which u find it is alphabet digit or special\n");
+    scanf("%c",&ch);
+    if(ch>='A' & ch<='Z'){
+        printf("The thing is alphabet Uppercase\n");
     }
-    else if(b>a & b>=c){
-        printf("%d\n",b);
+    else if (ch>='a' & ch<='z'){
+        printf("The thing is alphabet lowercase\n");
+    }
+    else if(ch>='0' & ch<='9'){
+        printf("The thing is digit\n");
     }
     else{
-        printf("%d\n",c);
+        printf("The thing is special character\n");
     }
 }
