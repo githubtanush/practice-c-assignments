@@ -1,11 +1,16 @@
 #include<stdio.h>
 int main(){
-    int i,s=0,n;
-    printf("Enter the n till what u want till the counting: ");
-    scanf("%d",&n);
-    for(i=1;i<=n;i++){
-        s=s+i;
+    int n;
+    int count;
+    printf("Enter the number for which u count digit: ");
+    scanf("%s",&n);
+    count=0;
+    while(n!=0){
+            int digit=n%10;
+            count=count+1;
+            n=n/10;
     }
-    printf("%d\n",s);
-    getchar();
+    printf("%d\n",count);
+    return 0;
 }
+//only fault in code is back 0 does not count but after zeroes they can count how solve this take dimag

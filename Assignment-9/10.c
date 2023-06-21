@@ -1,11 +1,15 @@
 #include<stdio.h>
+#include<math.h>
 int main(){
-    int i,s=0,n;
-    printf("Enter the n till what u want till the counting: ");
+    int n,count=0;
+    printf("Enter the number which u find the inverse: ");
     scanf("%d",&n);
-    for(i=1;i<=n;i++){
-        s=s+i;
+    while(n!=0){
+        int digit=n%10;
+        count=(count*10) + digit;
+        
+        n=n/10;
     }
-    printf("%d\n",s);
-    getchar();
+    printf("%d\n",count);
+    return 0;
 }

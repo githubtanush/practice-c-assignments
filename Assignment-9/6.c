@@ -1,11 +1,15 @@
 #include<stdio.h>
 int main(){
-    int i,s=0,n;
-    printf("Enter the n till what u want till the counting: ");
+    int i=1,n,fact=1;
+    printf("Enter the number which u find factorial: ");
     scanf("%d",&n);
-    for(i=1;i<=n;i++){
-        s=s+i;
+    while(i<=n){
+        if(i==0){
+            printf("1");
+        }
+        fact=fact*i;
+        i=i+1;
     }
-    printf("%d\n",s);
-    getchar();
+    printf("%d\n",fact);
+    return 0;
 }
