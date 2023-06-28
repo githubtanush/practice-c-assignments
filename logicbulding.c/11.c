@@ -84,13 +84,52 @@
 // }
 
 
-#include<stdio.h>
-int main(){
-    int i=5,j=1;
-    while(i){//i ki value 5 non-zero number so evaluate
-        j=i*j;
-        i--;
-    }
-    printf("%d %d",i,j);
-    getchar();
-}
+// #include<stdio.h>
+// int main(){
+//     int i=5,j=1;
+//     while(i){//i ki value 5 non-zero number so evaluate
+//         j=i*j;
+//         i--;
+//     }
+//     printf("%d %d",i,j);
+//     getchar();
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     int x=1,y=10;
+//     while(x<y){
+//         x++;
+//         y--;
+//     }
+//     printf("%d %d",x,y);
+//     getchar();
+//     return 0;
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     int i=2,x=36;
+//     while(x>1)
+//     {
+//         while(x%i==0){
+//             x/=i;
+//             printf("%d ",i);
+//         }
+//         i++;//i++andar vala loop mein nhi hai yeh yaad rkho
+//     }
+// }
+
+
+// #include<stdio.h>
+// int main(){
+//     int x;
+//     x=1,2,3;//yaah par ab variable declare nhi kar rah jo error aaygi ab uske niche hai to ab jo comma se pehla hai like 1 vo x mein store hojayga
+//     //x=(1,2,3);//variable declaration mein agr comma ka baad kuch likhna hai to vo hoga variable ka naam jeisa 1 ka baad comma lgaaya to uske baad jo bhi likha jayga vo hoga variable ka name  to 2 kya variable ka name ho skta hai agr yaah ham parenthesis laga kar krenge to ab yeh error nhi hai or agr ham asa krenge to last vali value hi us pura expression ka result bnti hai 
+//     while(x){
+//         printf("%d\n",x);
+//         x--;
+//     }
+// }
